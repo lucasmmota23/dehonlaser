@@ -61,7 +61,7 @@ ul {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url(./imgs/img-fundo.jpg);
+  background-image: url(../imgs/img-fundo.jpg);
   background-repeat: no repeat;
   background-size: cover;
   background-position: center center;
