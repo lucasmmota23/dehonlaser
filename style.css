@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.headline {
+  text-align: center;
+  font-size: 3rem;
+  color: #353535;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Estilização da navbar */
+#navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+#navbar-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 150px;
+}
+
+#navbar-container ul {
+  display: flex; /* para deixar os itens da lista na mesma linha */
+  gap: 30px;
+}
+/* Fim da Estilização da navbar */
+
+/* Estilização Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/imgs/img-fundo.jpg);
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.header-container h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+
+span {
+  color: #ec2100;
+}
+
+.header-container p {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.botao {
+  background: #ec2100;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+/* Fim da estilização header */
+
+/* Estilização Clientes */
+.clientes {
+  width: 100%;
+  background-color: #ededed;
+  padding: 30px;
+}
+
+.clientes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cliente {
+  display: inline-block;
+  width: 60%;
+  margin-top: 20px;
+}
+/* Fim da estilização CLIENTES */
+
+/* Estilização O que gravamos */
+.gravamos {
+  width: 100%;
+  background-color: #2e2e2e;
+  padding: 30px;
+}
+
+.gravamos .headline {
+  color: #f7f7f7;
+}
+
+.gravamos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gravamos-itens {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gravamos-itens img {
+  width: 60%;
+}
+
+.gravamos-itens p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #dedede;
+}
+/* Fim da estilização o que gravamos */
+
+#galeria {
+  width: 100%;
+  margin: auto;
+  background-color: #dedede;
+  padding: 30px;
+}
+
+#galeria-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.gallery-image {
+  margin-top: 15px;
+  display: inline-block;
+  width: 80%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #ec2100;
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer img {
+  width: 50px;
+  color: white;
+  margin: 5px;
+  transition: 0.4seg;
+}
+
+/* animações */
+
+.menu:hover {
+  border-radius: 1px;
+  border-bottom: 2px solid #ec2100;
+}
+
+.botao:hover {
+  background: #991400;
+}
+
+footer img:hover {
+  width: 47px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    height: 100px;
+  }
+  #navbar-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #navbar-container a {
+    margin: 15px;
+  }
+
+  .clientes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .gravamos-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .gravamos-itens p {
+    font-size: 1.8rem;
+  }
+
+  #galeria-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .gallery-image {
+    width: 80%;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  .links {
+    padding: 0;
+    margin: 0;
+  }
+}
